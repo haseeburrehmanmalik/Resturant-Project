@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14100d">
+
+<!-- ============ SEO ============ -->
+<title>The Food Haven | Restaurant in Hyderabad</title>
+<meta name="description" content="Enjoy delicious freshly prepared food at The Food Haven. Explore our menu, special offers and reserve your table today.">
+<meta name="keywords" content="The Food Haven, restaurant in Hyderabad, best restaurant Hyderabad, burgers, pizza, pasta, fine dining, table reservation, food delivery Hyderabad, Sindh restaurant">
+<meta name="author" content="The Food Haven">
+<link rel="canonical" href="https://thefoodhaven.com/">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Food Haven | Restaurant in Hyderabad">
+<meta property="og:description" content="Enjoy delicious freshly prepared food at The Food Haven. Explore our menu, special offers and reserve your table today.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=70">
+<meta property="og:url" content="https://thefoodhaven.com/">
+<meta property="og:site_name" content="The Food Haven">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Food Haven | Restaurant in Hyderabad">
+<meta name="twitter:description" content="Fresh Taste. Great Moments. Explore our menu and reserve your table today.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=70">
+
+<!-- Favicon (inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2314100d'/><text x='32' y='44' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23e0a13c' text-anchor='middle'>FH</text></svg>">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- =========================================================
+     HEADER / NAVBAR
+     ========================================================= -->
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <!-- Brand -->
+    <a href="#home" class="brand" aria-label="The Food Haven — home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2v8a3 3 0 0 0 3 3v9"/>
+          <path d="M3 2v5a3 3 0 0 0 3 3"/>
+          <path d="M9 2v5a3 3 0 0 1-3 3"/>
+          <path d="M17 2c-1.6 1-2.5 3-2.5 6 0 2 .8 3.4 2.5 3.8V22"/>
+        </svg>
+      </span>
+      <span class="brand__name">THE FOOD <em>HAVEN</em></span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a class="nav__link is-active" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#menu">Menu</a></li>
+        <li><a class="nav__link" href="#offers">Offers</a></li>
+        <li><a class="nav__link" href="#gallery">Gallery</a></li>
+        <li><a class="nav__link" href="#reviews">Reviews</a></li>
+        <li><a class="nav__link" href="#reservation">Reservation</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Actions -->
+    <div class="header__actions">
+
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+        </svg>
+      </button>
+
+      <button class="icon-btn cart-btn" id="cartToggle" type="button" aria-label="Open shopping cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 6h15l-1.5 9h-12L5 3H2"/>
+          <circle cx="9" cy="20" r="1.4"/>
+          <circle cx="18" cy="20" r="1.4"/>
+        </svg>
+        <span class="cart-btn__count" id="cartCount" aria-live="polite">0</span>
+      </button>
+
+      <a href="#menu" class="btn btn--primary btn--sm header__order">Order Now</a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay" hidden></div>
+
+<main id="main">
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <span class="hero__badge">
+      <span class="pulse" aria-hidden="true"></span>
+      OPEN TODAY &bull; 11:00 AM – 11:00 PM
+    </span>
+
+    <h1 class="hero__title">
+      Delicious Food,<br>
+      <span class="text-gold">Beautiful Moments</span>
+    </h1>
+
+    <p class="hero__text">
+      Experience freshly prepared dishes made with quality ingredients
+      and served with passion.
+    </p>
+
+    <div class="hero__cta">
+      <a href="#menu" class="btn btn--primary btn--lg">Explore Menu</a>
+      <a href="#reservation" class="btn btn--ghost btn--lg">Book a Table</a>
+    </div>
+
+    <ul class="hero__facts">
+      <li><strong>10+</strong> Years Serving</li>
+      <li><strong>25+</strong> Signature Dishes</li>
+      <li><strong>4.9/5</strong> Guest Rating</li>
+    </ul>
+  </div>
+
+  <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+    <span class="mouse" aria-hidden="true"><span></span></span>
+    <span class="hero__scroll-text">Scroll</span>
+  </a>
+</section>
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+<section class="section" id="about">
+  <div class="container about">
+
+    <div class="about__media reveal">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=70"
+           alt="Warm, modern interior of The Food Haven restaurant" loading="lazy" width="900" height="1100">
+      <div class="about__card">
+        <span class="about__card-num">10+</span>
+        <span class="about__card-label">Years of<br>Experience</span>
+      </div>
+    </div>
+
+    <div class="about__content reveal" style="--d:.12s">
+      <span class="eyebrow">About Us</span>
+      <h2 class="section-title">A Story Cooked With <em>Passion</em></h2>
+
+      <p class="lead">
+        Since 2015, The Food Haven has been a favourite gathering place in Hyderabad —
+        a kitchen where honest ingredients meet bold flavour.
+      </p>
+      <p>
+        Every plate that leaves our kitchen is prepared fresh to order by a team of
+        professional chefs who care about the details. From hand-pressed burger patties
+        to slow-simmered pasta sauces, we source locally, cook seasonally and serve generously.
+        Whether it's a family dinner, a quick lunch or a celebration, we're here to make
+        the moment memorable.
+      </p>
+
+      <ul class="about__list">
+        <li>
+          <span class="tick" aria-hidden="true">✓</span>
+          <div><strong>Quality Ingredients</strong><p>Fresh produce and premium cuts, sourced daily.</p></div>
+        </li>
+        <li>
+          <span class="tick" aria-hidden="true">✓</span>
+          <div><strong>Professional Chefs</strong><p>A skilled kitchen team with years of experience.</p></div>
+        </li>
+        <li>
+          <span class="tick" aria-hidden="true">✓</span>
+          <div><strong>Made Fresh to Order</strong><p>Nothing pre-made. Cooked the moment you order.</p></div>
+        </li>
+      </ul>
+
+      <a href="#menu" class="btn btn--primary">Discover Our Menu</a>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="container">
+    <div class="stats" id="stats">
+      <div class="stat reveal">
+        <span class="stat__num" data-count="10" data-suffix="+">0</span>
+        <span class="stat__label">Years of Experience</span>
+      </div>
+      <div class="stat reveal" style="--d:.08s">
+        <span class="stat__num" data-count="25" data-suffix="+">0</span>
+        <span class="stat__label">Signature Dishes</span>
+      </div>
+      <div class="stat reveal" style="--d:.16s">
+        <span class="stat__num" data-count="50" data-suffix="K+">0</span>
+        <span class="stat__label">Happy Customers</span>
+      </div>
+      <div class="stat reveal" style="--d:.24s">
+        <span class="stat__num" data-count="4.9" data-decimals="1" data-suffix="/5">0</span>
+        <span class="stat__label">Customer Rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     MENU
+     ========================================================= -->
+<section class="section section--soft" id="menu">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Menu</span>
+      <h2 class="section-title">Crafted To Be <em>Devoured</em></h2>
+      <p class="section-sub">Browse by category or search for your favourite dish.</p>
+    </div>
+
+    <div class="menu-toolbar reveal">
+      <div class="menu-filters" id="menuFilters" role="tablist" aria-label="Menu categories">
+        <button class="filter is-active" data-cat="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-cat="starters" role="tab" aria-selected="false">Starters</button>
+        <button class="filter" data-cat="burgers" role="tab" aria-selected="false">Burgers</button>
+        <button class="filter" data-cat="pizza" role="tab" aria-selected="false">Pizza</button>
+        <button class="filter" data-cat="main" role="tab" aria-selected="false">Main Course</button>
+        <button class="filter" data-cat="pasta" role="tab" aria-selected="false">Pasta</button>
+        <button class="filter" data-cat="desserts" role="tab" aria-selected="false">Desserts</button>
+        <button class="filter" data-cat="drinks" role="tab" aria-selected="false">Drinks</button>
+      </div>
+
+      <div class="menu-search">
+        <label class="sr-only" for="menuSearch">Search the menu</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/>
+        </svg>
+        <input type="search" id="menuSearch" placeholder="Search dishes…" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+
+    <p class="menu-empty" id="menuEmpty" hidden>
+      <span aria-hidden="true">🍽️</span> No dishes found.
+    </p>
+  </div>
+</section>
+
+<!-- =========================================================
+     SPECIAL OFFERS
+     ========================================================= -->
+<section class="section" id="offers">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Special Offers</span>
+      <h2 class="section-title">Deals Worth <em>Celebrating</em></h2>
+      <p class="section-sub">Limited-time offers crafted for sharing with the people you love.</p>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown reveal">
+      <div class="countdown__text">
+        <span class="countdown__tag">Weekend Special ends in</span>
+        <h3>Buy 2 Pizzas &amp; Get 1 Drink Free</h3>
+      </div>
+      <div class="countdown__timer" id="countdown" aria-live="polite">
+        <div class="cd-unit"><span id="cdDays">00</span><small>Days</small></div>
+        <div class="cd-unit"><span id="cdHours">00</span><small>Hours</small></div>
+        <div class="cd-unit"><span id="cdMins">00</span><small>Mins</small></div>
+        <div class="cd-unit"><span id="cdSecs">00</span><small>Secs</small></div>
+      </div>
+    </div>
+
+    <div class="offers">
+      <article class="offer reveal">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70"
+             alt="Family feast platter with grilled meats" loading="lazy" width="800" height="600">
+        <div class="offer__body">
+          <span class="offer__badge">20% OFF</span>
+          <h3>Family Feast</h3>
+          <p>Four mains, two sides and four drinks — perfect for sharing.</p>
+          <a href="#menu" class="btn btn--primary btn--sm">Grab the Deal</a>
+        </div>
+      </article>
+
+      <article class="offer reveal" style="--d:.1s">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=70"
+             alt="Freshly baked pizza on a wooden board" loading="lazy" width="800" height="600">
+        <div class="offer__body">
+          <span class="offer__badge">WEEKEND</span>
+          <h3>Weekend Special</h3>
+          <p>Buy 2 Pizzas &amp; Get 1 Drink Free — every Friday to Sunday.</p>
+          <a href="#menu" class="btn btn--primary btn--sm">Order Now</a>
+        </div>
+      </article>
+
+      <article class="offer reveal" style="--d:.2s">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=70"
+             alt="Fresh lunch bowl with vegetables" loading="lazy" width="800" height="600">
+        <div class="offer__body">
+          <span class="offer__badge">LUNCH</span>
+          <h3>Lunch Deal</h3>
+          <p>Complete meal from Rs. 799 — available 11:00 AM to 3:00 PM.</p>
+          <a href="#menu" class="btn btn--primary btn--sm">See Menu</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CHEF'S FAVORITES
+     ========================================================= -->
+<section class="section section--dark" id="favorites">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Chef's Favorites</span>
+      <h2 class="section-title">The Dishes Everyone <em>Comes Back For</em></h2>
+      <p class="section-sub">Hand-picked by our head chef — bold, generous and unforgettable.</p>
+    </div>
+
+    <div class="favorites">
+      <article class="fav reveal">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=70"
+             alt="Classic beef burger with melted cheese" loading="lazy" width="800" height="800">
+        <div class="fav__body">
+          <span class="fav__rating">★ 4.9</span>
+          <h3>Classic Beef Burger</h3>
+          <p>Juicy beef patty, fresh vegetables, cheese and our signature sauce.</p>
+          <div class="fav__foot">
+            <span class="fav__price">Rs. 899</span>
+            <button class="btn btn--primary btn--sm" data-add="b1" type="button">Order Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="fav reveal" style="--d:.08s">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=70"
+             alt="Cheese loaded pizza with fresh basil" loading="lazy" width="800" height="800">
+        <div class="fav__body">
+          <span class="fav__rating">★ 4.9</span>
+          <h3>Cheese Loaded Pizza</h3>
+          <p>Fresh mozzarella, premium cheese and delicious toppings.</p>
+          <div class="fav__foot">
+            <span class="fav__price">Rs. 1,299</span>
+            <button class="btn btn--primary btn--sm" data-add="p1" type="button">Order Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="fav reveal" style="--d:.16s">
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=800&q=70"
+             alt="Creamy chicken alfredo pasta" loading="lazy" width="800" height="800">
+        <div class="fav__body">
+          <span class="fav__rating">★ 4.8</span>
+          <h3>Chicken Alfredo Pasta</h3>
+          <p>Creamy Alfredo sauce with grilled chicken and parmesan.</p>
+          <div class="fav__foot">
+            <span class="fav__price">Rs. 1,099</span>
+            <button class="btn btn--primary btn--sm" data-add="pa1" type="button">Order Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="fav reveal" style="--d:.24s">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=70"
+             alt="Grilled chicken steak served with vegetables" loading="lazy" width="800" height="800">
+        <div class="fav__body">
+          <span class="fav__rating">★ 4.8</span>
+          <h3>Grilled Chicken Steak</h3>
+          <p>Flame-grilled chicken breast with herb butter and seasonal veggies.</p>
+          <div class="fav__foot">
+            <span class="fav__price">Rs. 1,499</span>
+            <button class="btn btn--primary btn--sm" data-add="mc1" type="button">Order Now</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     GALLERY
+     ========================================================= -->
+<section class="section" id="gallery">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="section-title">A Look Inside <em>The Haven</em></h2>
+      <p class="section-sub">Food, people and moments from our kitchen and dining room.</p>
+    </div>
+
+    <div class="gallery" id="galleryGrid">
+      <button class="gallery__item gallery__item--wide" type="button"
+              data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=70"
+             alt="The Food Haven dining area" loading="lazy" width="800" height="600">
+        <span class="gallery__overlay">Dining Room</span>
+      </button>
+
+      <button class="gallery__item gallery__item--tall" type="button"
+              data-src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=70"
+             alt="Juicy beef burger" loading="lazy" width="600" height="800">
+        <span class="gallery__overlay">Burgers</span>
+      </button>
+
+      <button class="gallery__item" type="button"
+              data-src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=70"
+             alt="Fresh pizza straight from the oven" loading="lazy" width="600" height="600">
+        <span class="gallery__overlay">Pizza</span>
+      </button>
+
+      <button class="gallery__item" type="button"
+              data-src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=70"
+             alt="Our chef preparing a dish" loading="lazy" width="600" height="600">
+        <span class="gallery__overlay">Our Chefs</span>
+      </button>
+
+      <button class="gallery__item" type="button"
+              data-src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=70"
+             alt="Chocolate dessert cake" loading="lazy" width="600" height="600">
+        <span class="gallery__overlay">Desserts</span>
+      </button>
+
+      <button class="gallery__item gallery__item--tall" type="button"
+              data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=70"
+             alt="Guests enjoying food together" loading="lazy" width="600" height="800">
+        <span class="gallery__overlay">Good Company</span>
+      </button>
+
+      <button class="gallery__item" type="button"
+              data-src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=70"
+             alt="Signature cold coffee" loading="lazy" width="600" height="600">
+        <span class="gallery__overlay">Drinks</span>
+      </button>
+
+      <button class="gallery__item" type="button"
+              data-src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=70"
+             alt="Restaurant interior seating" loading="lazy" width="600" height="600">
+        <span class="gallery__overlay">Interior</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     REVIEWS
+     ========================================================= -->
+<section class="section section--soft" id="reviews">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Customer Reviews</span>
+      <h2 class="section-title">Loved By Our <em>Guests</em></h2>
+      <p class="section-sub">Real words from real people who dined with us.</p>
+    </div>
+
+    <div class="slider reveal" id="reviewSlider">
+      <div class="slider__viewport">
+        <div class="slider__track" id="reviewTrack">
+
+          <article class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review__text">"Absolutely loved the food! Everything was fresh, delicious and perfectly prepared. The beef burger is easily the best in Hyderabad."</p>
+            <div class="review__person">
+              <img src="https://i.pravatar.cc/100?img=12" alt="Portrait of Ahmed Raza" loading="lazy" width="56" height="56">
+              <div><strong>Ahmed Raza</strong><span>March 2026</span></div>
+            </div>
+          </article>
+
+          <article class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review__text">"The ambiance is beautiful and the staff were so welcoming. We booked a table for six and everything was handled perfectly."</p>
+            <div class="review__person">
+              <img src="https://i.pravatar.cc/100?img=45" alt="Portrait of Sana Malik" loading="lazy" width="56" height="56">
+              <div><strong>Sana Malik</strong><span>February 2026</span></div>
+            </div>
+          </article>
+
+          <article class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review__text">"Ordered the family feast for delivery — arrived hot, well packed and generous portions. The kids devoured the pizza. Will order again!"</p>
+            <div class="review__person">
+              <img src="https://i.pravatar.cc/100?img=33" alt="Portrait of Bilal Khan" loading="lazy" width="56" height="56">
+              <div><strong>Bilal Khan</strong><span>February 2026</span></div>
+            </div>
+          </article>
+
+          <article class="review">
+            <div class="review__stars" aria-label="4.5 out of 5 stars">★★★★☆</div>
+            <p class="review__text">"Great flavours and a really nice atmosphere. The Alfredo pasta was creamy and rich. Slight wait on a busy Saturday, but worth it."</p>
+            <div class="review__person">
+              <img src="https://i.pravatar.cc/100?img=20" alt="Portrait of Hira Sheikh" loading="lazy" width="56" height="56">
+              <div><strong>Hira Sheikh</strong><span>January 2026</span></div>
+            </div>
+          </article>
+
+          <article class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review__text">"Celebrated my anniversary here. The chocolate lava cake was the perfect ending. Truly a premium experience without the premium attitude."</p>
+            <div class="review__person">
+              <img src="https://i.pravatar.cc/100?img=68" alt="Portrait of Usman Tariq" loading="lazy" width="56" height="56">
+              <div><strong>Usman Tariq</strong><span>January 2026</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="slider__controls">
+        <button class="slider__btn" id="reviewPrev" type="button" aria-label="Previous review">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="slider__dots" id="reviewDots" role="tablist" aria-label="Choose review"></div>
+        <button class="slider__btn" id="reviewNext" type="button" aria-label="Next review">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     RESERVATION
+     ========================================================= -->
+<section class="section" id="reservation">
+  <div class="container reservation">
+
+    <div class="reservation__aside reveal">
+      <span class="eyebrow">Reservation</span>
+      <h2 class="section-title">Book Your <em>Table</em></h2>
+      <p>
+        Reserve your spot in seconds. We'll confirm your booking by phone
+        shortly after you submit your request.
+      </p>
+
+      <ul class="info-list">
+        <li>
+          <span class="info-list__icon" aria-hidden="true">🕒</span>
+          <div><strong>Opening Hours</strong><p>Mon – Thu: 11:00 AM – 11:00 PM<br>Fri – Sun: 11:00 AM – 12:00 AM</p></div>
+        </li>
+        <li>
+          <span class="info-list__icon" aria-hidden="true">📞</span>
+          <div><strong>Call to Book</strong><p><a href="tel:+923003014052">+92 3003014052</a></p></div>
+        </li>
+        <li>
+          <span class="info-list__icon" aria-hidden="true">📍</span>
+          <div><strong>Find Us</strong><p>Main Food Street, Hyderabad, Sindh, Pakistan</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form-card reveal" id="reservationForm" novalidate style="--d:.12s">
+      <h3 class="form-card__title">Reservation Details</h3>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="rName">Full Name *</label>
+          <input type="text" id="rName" name="name" placeholder="e.g. Ali Ahmed" autocomplete="name" required>
+          <small class="error" data-error-for="rName"></small>
+        </div>
+
+        <div class="field">
+          <label for="rPhone">Phone *</label>
+          <input type="tel" id="rPhone" name="phone" placeholder="+92 3XX XXXXXXX" autocomplete="tel" required>
+          <small class="error" data-error-for="rPhone"></small>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="rEmail">Email *</label>
+        <input type="email" id="rEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <small class="error" data-error-for="rEmail"></small>
+      </div>
+
+      <div class="form-row form-row--3">
+        <div class="field">
+          <label for="rDate">Date *</label>
+          <input type="date" id="rDate" name="date" required>
+          <small class="error" data-error-for="rDate"></small>
+        </div>
+
+        <div class="field">
+          <label for="rTime">Time *</label>
+          <input type="time" id="rTime" name="time" required>
+          <small class="error" data-error-for="rTime"></small>
+        </div>
+
+        <div class="field">
+          <label for="rGuests">Guests *</label>
+          <select id="rGuests" name="guests" required>
+            <option value="">Select</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="8">8 Guests</option>
+            <option value="10">10 Guests</option>
+            <option value="12">12+ Guests</option>
+          </select>
+          <small class="error" data-error-for="rGuests"></small>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="rRequest">Special Request</label>
+        <textarea id="rRequest" name="request" rows="3" placeholder="Birthday setup, window table, allergies…"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--block">Reserve My Table</button>
+
+      <p class="form-success" id="reservationSuccess" hidden role="status">
+        ✓ Your reservation request has been received successfully!
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+<section class="section section--soft" id="contact">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2 class="section-title">Come Say <em>Hello</em></h2>
+      <p class="section-sub">We're always happy to hear from you.</p>
+    </div>
+
+    <div class="contact">
+
+      <div class="contact__info reveal">
+        <h3 class="contact__name">THE FOOD HAVEN</h3>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon" aria-hidden="true">📞</span>
+            <div><strong>Phone</strong><a href="tel:+923003014052">+92 3003014052</a></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">✉️</span>
+            <div><strong>Email</strong><a href="mailto:info@thefoodhaven.com">info@thefoodhaven.com</a></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">📍</span>
+            <div><strong>Address</strong><span>Main Food Street, Hyderabad, Sindh, Pakistan</span></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">🕒</span>
+            <div>
+              <strong>Opening Hours</strong>
+              <span>Monday – Thursday: 11:00 AM – 11:00 PM<br>Friday – Sunday: 11:00 AM – 12:00 AM</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact__actions">
+          <a href="tel:+923113728228" class="btn btn--primary btn--sm">Call Now</a>
+          <a href="mailto:info@thefoodhaven.com" class="btn btn--outline btn--sm">Email Us</a>
+          <a href="https://wa.me/923113728228?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order%20at%20The%20Food%20Haven."
+             class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact__map reveal" style="--d:.12s">
+        <iframe
+          title="Map showing The Food Haven location in Hyderabad, Sindh"
+          src="https://www.google.com/maps?q=Hyderabad%2C%20Sindh%2C%20Pakistan&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__col footer__col--brand">
+      <a href="#home" class="brand brand--footer">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2v8a3 3 0 0 0 3 3v9"/>
+            <path d="M3 2v5a3 3 0 0 0 3 3"/>
+            <path d="M9 2v5a3 3 0 0 1-3 3"/>
+            <path d="M17 2c-1.6 1-2.5 3-2.5 6 0 2 .8 3.4 2.5 3.8V22"/>
+          </svg>
+        </span>
+        <span class="brand__name">THE FOOD <em>HAVEN</em></span>
+      </a>
+      <p class="footer__desc">
+        Fresh Taste. Great Moments. Serving Hyderabad with freshly prepared
+        dishes, quality ingredients and warm hospitality since 2015.
+      </p>
+
+      <div class="socials">
+        <a href="#" aria-label="The Food Haven on Facebook" class="social">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.29-.04-1.27-.13-2.41-.13-2.38 0-4.02 1.45-4.02 4.12V9.9H7.5V13h2.77v8h3.23Z"/></svg>
+        </a>
+        <a href="#" aria-label="The Food Haven on Instagram" class="social">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="The Food Haven on TikTok" class="social">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.1 1.5 3.5 3.5 3.7v2.6c-1.3.1-2.5-.3-3.6-1v5.9c0 3.4-2.6 5.8-5.7 5.5-2.6-.25-4.6-2.3-4.7-4.9-.1-2.9 2.2-5.3 5.1-5.1v2.7c-.4-.1-.8-.2-1.2-.15-1.2.15-2 1.05-2 2.3 0 1.2.95 2.15 2.15 2.2 1.25.05 2.25-.85 2.25-2.2V3h2.2Z"/></svg>
+        </a>
+        <a href="#" aria-label="The Food Haven on YouTube" class="social">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.9c-.2-1.1-.9-1.9-2-2.1C17.7 5.5 12 5.5 12 5.5s-5.7 0-7.6.3c-1.1.2-1.8 1-2 2.1C2.1 9.6 2.1 12 2.1 12s0 2.4.3 4.1c.2 1.1.9 1.9 2 2.1 1.9.3 7.6.3 7.6.3s5.7 0 7.6-.3c1.1-.2 1.8-1 2-2.1.3-1.7.3-4.1.3-4.1s0-2.4-.3-4.1ZM10 15.2V8.8l5.3 3.2-5.3 3.2Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Quick Links</h4>
+      <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#offers">Special Offers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Our Menu</h4>
+      <ul class="footer__links">
+        <li><a href="#menu" data-goto-cat="starters">Starters</a></li>
+        <li><a href="#menu" data-goto-cat="burgers">Burgers</a></li>
+        <li><a href="#menu" data-goto-cat="pizza">Pizza</a></li>
+        <li><a href="#menu" data-goto-cat="main">Main Course</a></li>
+        <li><a href="#menu" data-goto-cat="pasta">Pasta</a></li>
+        <li><a href="#menu" data-goto-cat="desserts">Desserts</a></li>
+        <li><a href="#menu" data-goto-cat="drinks">Drinks</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Get In Touch</h4>
+      <ul class="footer__links footer__links--plain">
+        <li><a href="tel:+923003014052">+92 3003014052</a></li>
+        <li><a href="mailto:info@thefoodhaven.com">info@thefoodhaven.com</a></li>
+        <li>Main Food Street,<br>Hyderabad, Sindh, Pakistan</li>
+      </ul>
+
+      <h4 class="footer__hours-title">Opening Hours</h4>
+      <ul class="footer__links footer__links--plain">
+        <li>Mon – Thu: 11:00 AM – 11:00 PM</li>
+        <li>Fri – Sun: 11:00 AM – 12:00 AM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; 2026 The Food Haven. All Rights Reserved.</p>
+    <p class="footer__made">Fresh Taste. Great Moments.</p>
+  </div>
+</footer>
+
+<!-- =========================================================
+     CART DRAWER
+     ========================================================= -->
+<div class="overlay" id="cartOverlay" hidden></div>
+
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <header class="drawer__head">
+    <h2 class="drawer__title">Your Order</h2>
+    <button class="icon-btn drawer__close" id="cartClose" type="button" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </header>
+
+  <div class="drawer__body">
+
+    <!-- Step 1: Cart items -->
+    <div id="cartView">
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-empty" id="cartEmpty">
+        <span aria-hidden="true">🛒</span>
+        <p>Your cart is empty.</p>
+        <small>Add something delicious from the menu.</small>
+      </div>
+    </div>
+
+    <!-- Step 2: Checkout form -->
+    <form id="checkoutForm" class="checkout-form" novalidate hidden>
+      <button type="button" class="link-back" id="backToCart">← Back to cart</button>
+      <h3 class="checkout-form__title">Delivery Details</h3>
+
+      <div class="field">
+        <label for="cName">Customer Name *</label>
+        <input type="text" id="cName" placeholder="Your full name" autocomplete="name" required>
+        <small class="error" data-error-for="cName"></small>
+      </div>
+
+      <div class="field">
+        <label for="cPhone">Phone Number *</label>
+        <input type="tel" id="cPhone" placeholder="+92 3XX XXXXXXX" autocomplete="tel" required>
+        <small class="error" data-error-for="cPhone"></small>
+      </div>
+
+      <div class="field">
+        <label for="cAddress">Delivery Address *</label>
+        <textarea id="cAddress" rows="2" placeholder="House / street / area, Hyderabad" required></textarea>
+        <small class="error" data-error-for="cAddress"></small>
+      </div>
+
+      <div class="field">
+        <label for="cNotes">Order Notes</label>
+        <textarea id="cNotes" rows="2" placeholder="Extra spicy, no onions, ring the bell twice…"></textarea>
+      </div>
+
+      <fieldset class="payments">
+        <legend>Payment Method *</legend>
+        <label class="pay">
+          <input type="radio" name="payment" value="Cash on Delivery" checked>
+          <span>Cash on Delivery</span>
+        </label>
+        <label class="pay">
+          <input type="radio" name="payment" value="Pay at Restaurant">
+          <span>Pay at Restaurant</span>
+        </label>
+      </fieldset>
+
+      <button type="submit" class="btn btn--primary btn--block">Place Order</button>
+    </form>
+
+    <!-- Step 3: Confirmation -->
+    <div id="successView" class="order-success" hidden>
+      <div class="order-success__icon" aria-hidden="true">✓</div>
+      <h3>Order Confirmed!</h3>
+      <p>Thank you, <strong id="successName">friend</strong>. Your order has been placed successfully.</p>
+      <ul class="order-success__meta">
+        <li><span>Order ID</span><strong id="successId">—</strong></li>
+        <li><span>Payment</span><strong id="successPay">—</strong></li>
+        <li><span>Total</span><strong id="successTotal">—</strong></li>
+      </ul>
+      <p class="order-success__note">We'll call you shortly on the number provided to confirm delivery.</p>
+      <button type="button" class="btn btn--primary btn--block" id="successDone">Continue Browsing</button>
+    </div>
+
+  </div>
+
+  <!-- Cart footer -->
+  <footer class="drawer__foot" id="cartFoot">
+    <div class="totals">
+      <div class="totals__row"><span>Subtotal</span><span id="cartSubtotal">Rs. 0</span></div>
+      <div class="totals__row"><span>Delivery</span><span id="cartDelivery">Rs. 0</span></div>
+      <div class="totals__row totals__row--grand"><span>Total</span><span id="cartTotal">Rs. 0</span></div>
+    </div>
+    <button type="button" class="btn btn--primary btn--block" id="proceedBtn" disabled>Proceed to Order</button>
+    <p class="drawer__hint">Free delivery on orders over Rs. 1,500</p>
+  </footer>
+</aside>
+
+<!-- =========================================================
+     LIGHTBOX
+     ========================================================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lightbox__close" id="lbClose" type="button" aria-label="Close image viewer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img id="lbImage" src="" alt="">
+    <figcaption id="lbCaption"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+  </button>
+</div>
+
+<!-- =========================================================
+     FLOATING BUTTONS
+     ========================================================= -->
+<a class="float-btn float-btn--whatsapp"
+   href="https://wa.me/923113728228?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order%20at%20The%20Food%20Haven."
+   target="_blank" rel="noopener" aria-label="Chat with The Food Haven on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.55 3.75 1.5 5.28L2 22l5.02-1.66a9.8 9.8 0 0 0 5.02 1.38c5.44 0 9.84-4.4 9.84-9.84S17.48 2 12.04 2Zm5.72 13.9c-.24.68-1.4 1.3-1.94 1.35-.54.06-1.02.14-2.9-.62-2.28-.92-3.72-3.28-3.83-3.43-.11-.15-.9-1.24-.9-2.36 0-1.12.58-1.67.79-1.9.2-.23.44-.29.59-.29h.42c.14 0 .32-.03.5.38.18.44.63 1.55.68 1.66.06.11.09.24.01.38-.07.15-.15.24-.29.4-.15.15-.31.34-.44.45-.15.14-.3.29-.13.58.17.29.75 1.24 1.62 2.01 1.11.99 1.83 1.19 2.09 1.32.26.13.42.11.57-.06.15-.18.66-.77.83-1.03.18-.26.35-.22.6-.13.24.09 1.55.73 1.81.87.27.13.44.2.51.31.07.11.07.66-.17 1.33Z"/>
+  </svg>
+  <span class="sr-only">WhatsApp</span>
+</a>
+
+<button class="float-btn float-btn--top" id="backToTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
